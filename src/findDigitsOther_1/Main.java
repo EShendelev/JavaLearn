@@ -19,8 +19,8 @@ public class Main {
             array[i] = a;
         }
 
-        
         System.out.println(Arrays.toString(array)); 
-        System.out.println(Arrays.stream(array).collect(Collectors.groupingBy(Function.identity(), Collectors.counting())));
+        System.out.println(Arrays.stream(array).collect(Collectors.groupingBy(Function.identity(),
+                Collectors.counting())));
     }
 }
