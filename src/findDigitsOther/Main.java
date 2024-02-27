@@ -9,13 +9,15 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива");
         int arrSize = scanner.nextInt();
-        int[] array = new int[arrSize];
+        int[] array = new int[arrSize + 1];
 
-        System.out.println("Вводите числа по очереди");
-        for (int i = 0; i < array.length; i++) {
+        System.out.println("Вводите числа по очереди от 1 до 100");
+        for (int i = 0; i < array.length - 1; i++) {
             int a = scanner.nextInt();
             array[i] = a;
         }
+
+        array[array.length - 1] = 105;
 
         System.out.println(Arrays.toString(array));
 
@@ -29,12 +31,6 @@ public class Main {
                 System.out.println(array[i] + ": " + count);
                 count = 1;
             }
-        }
-
-        if (array[array.length - 1] != array[array.length - 2]) {
-            System.out.println(array[array.length - 1] + ": " + 1);
-        } else {
-            System.out.println(array[array.length - 1] + ": " + count);
         }
     }
 }

@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите размер массива");
-        Integer arrSize = scanner.nextInt();
+        int arrSize = scanner.nextInt();
         Integer[] array = new Integer[arrSize];
 
         System.out.println("Вводите числа по очереди");
