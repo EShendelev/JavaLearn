@@ -1,4 +1,4 @@
-package findDigits;
+package rarzip.findDigits;
 
 import java.util.*;
 
@@ -33,7 +33,7 @@ public class Main {
             System.out.printf("%d: %d\n", key, digMap.get(key));
         }
 
-        Example ex = new Example("findDigits.Example");
+        Example ex = new Example("rarzip.findDigits.Example");
         System.out.println(ex);
     }
 }

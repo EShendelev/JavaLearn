@@ -1,4 +1,4 @@
-package findDigitsOther;
+package rarzip.findDigitsOther;
 
 
 import java.util.Arrays;
