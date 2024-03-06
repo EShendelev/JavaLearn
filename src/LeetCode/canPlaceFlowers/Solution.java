@@ -14,12 +14,11 @@ public class Solution {
             return false;
         }
 
-        int usedPlot = 0;
         int availablePlot = 0;
 
         for (int i = 0; i < len; i++) {
             if (flowerbed[i] == 1) {
-                usedPlot++;
+
                 i++;
             } else {
                 boolean prevOccupied = i == 0 || flowerbed[i - 1] == 0;
