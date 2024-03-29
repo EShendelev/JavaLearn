@@ -21,15 +21,14 @@ public class QuickSort {
         int[] left = new int[0];
         int[] right = new int[0];
         int pivot = arr[(int) (Math.random() * (len - 1))]; // по хорошему нужно брать случайный
-        int leftIdx = 0, rightIdx = 0, i = 0;
+        int i = 0;
 
         while (i < len) {
             if (arr[i] < pivot) {
                 left = add(left, arr[i]);
-                leftIdx++;
+
             } else if (arr[i] > pivot) {
                 right = add(right, arr[i]);
-                rightIdx++;
             }
             i++;
         }
