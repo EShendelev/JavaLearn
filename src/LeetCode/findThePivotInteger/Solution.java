@@ -15,8 +15,7 @@ public class Solution {
         if (sqrtOfSum * sqrtOfSum == sum) {
             return sqrtOfSum;
         }
-
+        
         return -1;
     }
-
 }
