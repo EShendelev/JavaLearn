@@ -14,7 +14,6 @@ public class Solution {
         Test test = new Test("test");
         Test test1 = new Test("test");
 
-        boolean eq = test.equals(test1);
         System.out.println(test.hashCode());
         System.out.println(test1.hashCode());
 
