@@ -23,7 +23,6 @@ public class QuickSort {
         System.out.println(Arrays.toString(arr5));
         System.out.println(Arrays.toString(arr6));
     }
-
     //"карьера программиста. с. 101"
 
     static void qsort(int[] arr, int startIdx, int finishIdx) {
@@ -34,7 +33,6 @@ public class QuickSort {
             qsort(arr, index, finishIdx); //сортировка правого подмассива
         }
     }
-
 
     static int partition(int[] arr, int startIdx, int finishIdx) {
         int pivot = arr[(finishIdx + startIdx) / 2]; //выбор центрального индекса за опорный элемент
@@ -58,6 +56,4 @@ public class QuickSort {
         arr[startIdx] = b;
         arr[finishIdx] = a;
     }
-
 }
-
