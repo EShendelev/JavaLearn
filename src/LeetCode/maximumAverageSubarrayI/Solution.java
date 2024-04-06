@@ -20,10 +20,10 @@ public class Solution {
 
     /**
      *  вычисляет сумму элементов подмассива включая start, но не включая finish
-     * @param arr
-     * @param start
-     * @param finish
-     * @return
+     * @param arr bla
+     * @param start bla bla
+     * @param finish bla bla bla
+     * @return alb alb
      */
     public int sumForSubarray(int[] arr, int start, int finish) {
         int res = 0;
