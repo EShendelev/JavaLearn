@@ -13,6 +13,7 @@ public class Solution {
     public int maxVowels(String s, int k) {
         Set<Character> vovels = new HashSet<>(Arrays.asList('a', 'e', 'i', 'o', 'u'));
         if (s.length() < 2) return 0;
+
         int counOfVovelsInWindow = 0;
         //количество гласных в первом положении окна
         for (int i = 0; i < k; i++) {
