@@ -2,16 +2,19 @@ package LeetCode.removeDuplicatesFromString;
 
 public class Solutions {
     public int removeDuplicates(int[] nums) {
-        if (nums.length  < 2) {
-            return nums.length;
+        int len = nums.length;
+        //если пустой - вернет 0, если 1 элемент - 1
+        if (len  < 2) {
+            return len;
         }
-        int idx = 0;
-        for (int i = 0; i < nums.length - 2; i++) {
-            if (nums[i] != nums[i + 1]) {
-                idx++;
-                nums[idx] = nums[i + 1];
+
+        int res = 1;
+        for (int i = 1; i <= len - 1; i++) {
+            if (nums[i-1] != nums[i]) {
+                nums[res] = nums[i];
+                res++;
             }
         }
-        return nums.length - idx;
+        return res;
     }
 }
