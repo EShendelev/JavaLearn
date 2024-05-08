@@ -1,4 +1,4 @@
-package test.LeetCode.removeDuplicatesFromString;
+package LeetCode.removeDuplicatesFromString;
 
 import LeetCode.removeDuplicatesFromString.Solutions;
 import org.junit.Test;
